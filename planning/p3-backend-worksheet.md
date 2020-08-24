@@ -60,29 +60,33 @@ Time frames are also key in the development cycle. You have limited time to code
 
 #### MVP
 
-| Component               | Priority | Estimated Time | Time Invetsted | Actual Time |
-| ----------------------- | :------: | :------------: | :------------: | :---------: |
-| Hamburger               |    H     |      1hr       |     1.5hr      |     -hr     |
-| Project Previews        |    H     |      3hr       |      -hr       |     -hr     |
-| Regular Nav             |    H     |       H        |      -hr       |     -hr     |
-| Adding Form             |    H     |     1.5hr      |      -hr       |     -hr     |
-| Other sections and flex |    M     |      4hr       |      2hr       |     -hr     |
-| Working with API        |    H     |      3hrs      |      2hr       |     -hr     |
-| Responsive              |    H     |      3hr       |      -hr       |     -hr     |
-| Social Media Icons      |    L     |      1hr       |      -hr       |     -hr     |
-| Total                   |    H     |    15.5hrs     |      -hrs      |    -hrs     |
+| Component                            | Priority | Estimated Time | Time Invetsted | Actual Time |
+| -----------------------              | :------: | :------------: | :------------: | :---------: |
+|  JWT Authentication/Authorization    |    H     |      4hr       |     1.5hr      |     -hr     |
+|  User model                          |    H     |      2hr       |      -hr       |     -hr     |
+|  User controller and dependencies   |     H     |       2H        |      -hr       |     -hr     |
+|  Expense Model                      |    H     |     1.5hr      |      -hr       |     -hr     |
+| Expense Controller                  |    M     |      4hr       |      2hr       |     -hr     |
+|  Day Model                          |    H     |      3hrs      |      2hr       |     -hr     |
+| Day Controller                      |    H     |      3hr       |      -hr       |     -hr     |
+|   Routes                            |    L     |      1hr       |      -hr       |     -hr     |
+| Migration                           |    M     |      mins      |       mins      |     mins   |
+| Deploy and test on Heroku           |    M     |      mins      |       mins       |    mins    |
+|  Test on Postman                    |    M      |     mins       |      mins        |   mins     |
+| Total                                |    H     |    27.5hrs     |      -hrs      |    -hrs     |
 
 #### PostMVP
 
-| Component             | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --------------------- | :------: | :------------: | :------------: | :---------: |
-| Project Hover         |    L     |      3hr       |      -hr       |     -hr     |
-| Banner letters wiggle |    L     |      1hr       |      -hr       |     -hr     |
-| Interactive Banner    |    M     |      4hr       |      -hr       |     -hr     |
-| Materialize           |    H     |      4hr       |      -hr       |     -hr     |
-| Bootstrap             |    H     |      4hr       |      -hr       |     -hr     |
-| Make own icon         |    L     |      4hr       |      -hr       |     -hr     |
-| Total                 |    H     |     20hrs      |      -hrs      |    -hrs     |
+| Component                            | Priority | Estimated Time | Time Invetsted | Actual Time |
+| ---------------------                | :------: | :------------: | :------------: | :---------: |
+|
+- Query for week, month, year          |    L     |      3hr       |      -hr       |     -hr     |
+|  Google, Facebook sign up/log in     |    L     |      1hr       |      -hr       |     -hr     |
+ 
+| Materialize                          |    H     |      4hr       |      -hr       |     -hr     |
+| Bootstrap                            |    H     |      4hr       |      -hr       |     -hr     |
+| Make own icon                        |    L     |      4hr       |      -hr       |     -hr     |
+| Total                                |    H     |     17hrs      |      -hrs      |    -hrs     |
 
 ## Additional Libraries
 
