@@ -11,14 +11,20 @@ class ExpensesController < ApplicationController
 
   def create
     @one_expense = Expense.new(expense_params)
-    if @one_expense.save
-      render :json => {
-          :response => 'successfully added new expense',
-          :data => @one_expense
-      }
+    if Expense.exists?(@one_expense.category_id)
+      if @one_expense.save
+        render :json => {
+            :response => 'successfully added new expense',
+            :data => @one_expense
+        }
+      else
+        render :json => {
+            :error => 'not a valid expense'
+        }
+      end
     else
       render :json => {
-          :error => 'not a valid expense'
+          :status => "budget is non-existent"
       }
     end
   end
