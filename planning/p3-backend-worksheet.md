@@ -22,7 +22,7 @@ Use this section to describe your final project and perhaps any links to relevan
 
 User Model: 
 - username:string
-- password:string
+- password:string ("password_digest")
 
 Budget Model
 - user:references
