@@ -21,17 +21,19 @@ You are **responsible** for scheduling time with your squad to seek approval for
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
 User Model: 
-- username
-- password
+- username:string
+- password:string
 
 Budget Model
-- name
-- amount
+- user:references
+- name:string
+- amount:bigint
 
 Expense Model
-- amount
-- date
-- category
+- budget:references
+- amount:bigint
+- date:date
+- category:string
 
 ## Google Sheet
 
