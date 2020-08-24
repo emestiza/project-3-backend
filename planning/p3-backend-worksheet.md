@@ -74,6 +74,7 @@ Time frames are also key in the development cycle. You have limited time to code
 
 #### PostMVP
 
+<<<<<<< HEAD
 | Component             | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --------------------- | :------: | :------------: | :------------: | :---------: |
 | Project Hover         |    L     |      3hr       |      -hr       |     -hr     |
@@ -83,6 +84,18 @@ Time frames are also key in the development cycle. You have limited time to code
 | Bootstrap             |    H     |      4hr       |      -hr       |     -hr     |
 | Make own icon         |    L     |      4hr       |      -hr       |     -hr     |
 | Total                 |    H     |     20hrs      |      -hrs      |    -hrs     |
+=======
+| Component                            | Priority | Estimated Time | Time Invetsted | Actual Time |
+| ---------------------                | :------: | :------------: | :------------: | :---------: |
+|
+- Query for week, month, year          |    L     |      3hr       |      -hr       |     -hr     |
+|  Google, Facebook sign up/log in     |    L     |      1hr       |      -hr       |     -hr     |
+ 
+| Materialize                          |    H     |      4hr       |      -hr       |     -hr     |
+| Bootstrap                            |    H     |      4hr       |      -hr       |     -hr     |
+| Make own icon                        |    L     |      4hr       |      -hr       |     -hr     |
+| Total                                |    H     |     17hrs      |      -hrs      |    -hrs     |
+>>>>>>> parent of a2ba19c... P3
 
 ## Additional Libraries
 
