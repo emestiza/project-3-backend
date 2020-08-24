@@ -17,7 +17,14 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This finance tracker is a simple tool for users to visualize their spending history. 
+The back-end will be built using Ruby on Rails and PostgreSQL. 
+Our users value a minimal layout and functionality to achieve their goals faster.
+Users will be able to make an account and sign in. 
+Users will be able to store their expenses in a database, organized by date and category. 
+Users will be able to exclusively access their own expenses. 
+Users will be able to see their expenses as a table and as a chart.
+In future features, users will be able to log in using social media accounts, select dates, and select different types of charts.
 
 ## Wireframes
 
@@ -99,7 +106,8 @@ Time frames are also key in the development cycle. You have limited time to code
 
 ## Additional Libraries
 
-Use this section to list all supporting libraries and thier role in the project.
+- Rails-related RubyGems
+- pg (a PostgreSQL Ruby gem)
 
 ## Code Snippet
 
