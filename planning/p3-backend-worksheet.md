@@ -79,10 +79,8 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component                            | Priority | Estimated Time | Time Invetsted | Actual Time |
 | ---------------------                | :------: | :------------: | :------------: | :---------: |
-|
-- Query for week, month, year          |    L     |      3hr       |      -hr       |     -hr     |
-|  Google, Facebook sign up/log in     |    L     |      1hr       |      -hr       |     -hr     |
- 
+|- Query for week, month, year         |    L    |      3hr        |      -hr       |     -hr     |
+|  Google, Facebook sign up/log in     |    L     |      1hr       |      -hr       |     -hr     | 
 | Materialize                          |    H     |      4hr       |      -hr       |     -hr     |
 | Bootstrap                            |    H     |      4hr       |      -hr       |     -hr     |
 | Make own icon                        |    L     |      4hr       |      -hr       |     -hr     |
