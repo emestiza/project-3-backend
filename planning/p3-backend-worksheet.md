@@ -19,6 +19,19 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
+User Model: 
+- username
+- password
+
+Budget Model
+- name
+- amount
+
+Expense Model
+- amount
+- date
+- category
+
 ## Google Sheet
 
 Include link to your google sheet here. Here is the sample [Suresh had used in class](https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mMtro/edit#gid=0)
