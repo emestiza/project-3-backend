@@ -30,7 +30,7 @@ class ExpensesController < ApplicationController
   end
 
   def category
-    @one_category = Expense.where('category = ?', "#{params[:category]}")
+    @one_category = Expense.where('category = ?', params[:category])
     puts @one_category
     if @one_category
       render :json => {
