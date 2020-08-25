@@ -4,11 +4,25 @@ class UsersController < ApplicationController
   # REGISTER
   def create
     @user = User.create(user_params)
-    if @user.valid?
-      token = encode_token({user_id: @user.id})
-      render json: {user: @user, token: token}
+      if @user.valid?
+        token = encode_token({user_id: @user.id})
+        render json: {user: @user, token: token}
+      else
+        render json: {error: "Invalid username or password"}
+      end
+  end
+
+  def show
+    @single_user = User.where('username = ?', params[:username])
+    if @single_user
+      render :json => {
+          :response => 'User found',
+          :data => @single_user
+      }
     else
-      render json: {error: "Invalid username or password"}
+      render :json => {
+          :response => 'User not found'
+      }
     end
   end
 
@@ -32,7 +46,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.permit(:username, :password, :age)
+    params.permit(:username, :password)
   end
 
 end
