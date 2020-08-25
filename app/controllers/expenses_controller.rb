@@ -29,6 +29,21 @@ class ExpensesController < ApplicationController
     end
   end
 
+  def category
+    @one_category = Expense.where('category = ?', "#{params[:category]}")
+    puts @one_category
+    if @one_category
+      render :json => {
+          :response => 'Category found',
+          :data => @one_category
+      }
+    else
+      render :json => {
+          :response => 'error'
+      }
+    end
+  end
+
   def show
     @single_expense = Expense.exists?(params[:id])
     if @single_expense
