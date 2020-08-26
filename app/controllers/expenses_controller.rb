@@ -11,7 +11,7 @@ class ExpensesController < ApplicationController
 
   def create
     @one_expense = Expense.new(expense_params)
-    if Expense.exists?(@one_expense.budget_id)
+    if Budget.exists?(@one_expense.budget_id)
       if @one_expense.save
         render :json => {
             :response => 'successfully added new expense',
