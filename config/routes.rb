@@ -7,6 +7,6 @@ Rails.application.routes.draw do
 
   resources :budgets do
     resources :expenses
-    get "/:category", to: "expenses#category"
+    get "/category/:category", to: "expenses#category"
   end
 end
