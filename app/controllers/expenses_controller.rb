@@ -9,6 +9,16 @@ class ExpensesController < ApplicationController
     }
   end
 
+  def expenses_by_user
+    #@budget = Budget.where({id: params[:budget_id], user: params[:user_id]})
+    @user = User.find(params[:user_id])
+    @user_expenses = @user.expenses
+    render json: {
+        'response': "Here are all your expenses",
+        :data => @user_expenses
+    }
+  end
+
   def create
     @one_expense = Expense.new(expense_params)
     if Budget.exists?(@one_expense.budget_id)
