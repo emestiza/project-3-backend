@@ -3,6 +3,8 @@ class CreateBudgets < ActiveRecord::Migration[6.0]
     create_table :budgets do |t|
       t.string :name
       t.bigint :amount
+      t.references :user, null: false, foreign_key: true
+
       t.timestamps
     end
   end
