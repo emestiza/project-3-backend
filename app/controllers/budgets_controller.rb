@@ -38,6 +38,16 @@ class BudgetsController < ApplicationController
       }
     end
   end
+
+  def budget_by_user
+    @user = User.find(params[:user_id])
+    @user_budget = Budget.where('user_id = ?', params[:user_id])
+    render :json => {
+        :response => "Here is your budget",
+        :data => @user_budget
+    }
+  end
+
   def update
     #check if id is in the table
     if(@single_budget_update = Budget.find_by_id(params[:id])).present?
@@ -70,6 +80,6 @@ class BudgetsController < ApplicationController
   private
 
   def budget_params
-    params.permit(:id,:name, :amount, :user_id)
+    params.permit(:name, :amount, :user_id)
   end
 end
