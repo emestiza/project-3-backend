@@ -1,5 +1,13 @@
 # Project Overview
 
+## Project
+
+Link to completed project [here](https://squilliamp3.herokuapp.com/)
+
+Link to project frontend [here](https://github.com/weilyl/project-3-frontend)
+
+Link to project backend [here](https://github.com/weilyl/project-3-backend)
+
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.
@@ -8,20 +16,31 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Day   | Deliverable                                                      | Status     |
 | ----- | ---------------------------------------------------------------- | ---------- |
-| Day 1 | Project Description                                              | Incomplete |
-| Day 1 | Wireframes / Priority Matrix / Timeline `backend` and `frontend` | Incomplete |
-| Day 2 | Working RestAPI                                                  | Incomplete |
-| Day 3 | Core Application Structure (HTML, CSS, etc.)                     | Incomplete |
-| Day 4 | MVP & Bug Fixes                                                  | Incomplete |
-| Day 5 | Final Touches and Present                                        | Incomplete |
+| Day 1 | Project Description                                              | Complete |
+| Day 1 | Wireframes / Priority Matrix / Timeline `backend` and `frontend` | Complete |
+| Day 2 | Working RestAPI                                                  | Complete |
+| Day 3 | Frontend: Core Application Structure (HTML, CSS, etc.)           | Complete |
+| Day 4 | MVP & Bug Fixes                                                  | Complete |
+| Day 5 | Final Touches and Present                                        | Complete |
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+User Model: 
+- username:string
+- password:string ("password_digest")
+
+Budget Model
+- user:references
+- name:string
+- amount:bigint
+
+Expense Model
+- budget:references
+- amount:bigint
+- date:date
+- category:string
 
 ## Wireframes
-
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.
 
 - [Mobile](https://git.generalassemb.ly/SEIR-629/project-1-portfolio/blob/master/readme-assets/mobile.png)
 - [Tablet](https://git.generalassemb.ly/SEIR-629/project-1-portfolio/blob/master/readme-assets/nav-highlight.gif)
@@ -40,8 +59,8 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - User controller and dependencies
 - Expense Model
 - Expense Controller
-- Day Model
-- Day Controller
+- Budget Model
+- Budget Controller
 - Routes
 - Migration
 - Deploy and test on Heroku
@@ -60,67 +79,79 @@ Time frames are also key in the development cycle. You have limited time to code
 
 #### MVP
 
-| Component               | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :------------: | :---------: |
-| Hamburger               |    H     |      1hr       |     1.5hr      |     -hr     |
-| Project Previews        |    H     |      3hr       |      -hr       |     -hr     |
-| Regular Nav             |    H     |       H        |      -hr       |     -hr     |
-| Adding Form             |    H     |     1.5hr      |      -hr       |     -hr     |
-| Other sections and flex |    M     |      4hr       |      2hr       |     -hr     |
-| Working with API        |    H     |      3hrs      |      2hr       |     -hr     |
-| Responsive              |    H     |      3hr       |      -hr       |     -hr     |
-| Social Media Icons      |    L     |      1hr       |      -hr       |     -hr     |
-| Total                   |    H     |    15.5hrs     |      -hrs      |    -hrs     |
+| JWT Authentication/Authorization   |    H     |      1hr      |     2hr      |     1hr     |
+| User model                         |    H     |      0.5hr    |      1hr       |     hr     |
+| User controller                    |    M    |       2hr      |      3hr       |     -hr     |
+| Expense Controller                 |    H     |     2hr      |      3hr       |     -hr     |
+| Expense Model                      |    M     |      1hr       |      2hr       |     -hr     |
+| Budget Model                       |    M     |      2hrs      |      1hr       |     -hr     |
+| Budget Controller                  |    H     |      2hr       |      3hr       |     -hr     |
+| Routes                             |    L     |      1hr       |      2hr       |     -hr     |
+| Local Migration                    |    L     |      1hr       |      1hr       |     3hr     |
+| Test on Postman                    |    L     |      5hr       |      1hr       |     -hr     |
+| Deploy, migrate test on Heroku     |    L     |      10hr      |      1hr       |     3hr     |
+| Total                              |    H     |    27.5 hrs     |      20hrs      |    -hrs     |
 
 #### PostMVP
 
-<<<<<<< HEAD
-| Component             | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component             | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :------------: | :---------: |
 | Project Hover         |    L     |      3hr       |      -hr       |     -hr     |
 | Banner letters wiggle |    L     |      1hr       |      -hr       |     -hr     |
 | Interactive Banner    |    M     |      4hr       |      -hr       |     -hr     |
 | Materialize           |    H     |      4hr       |      -hr       |     -hr     |
 | Bootstrap             |    H     |      4hr       |      -hr       |     -hr     |
-| Make own icon         |    L     |      4hr       |      -hr       |     -hr     |
-| Total                 |    H     |     20hrs      |      -hrs      |    -hrs     |
-=======
-| Component                            | Priority | Estimated Time | Time Invetsted | Actual Time |
-| ---------------------                | :------: | :------------: | :------------: | :---------: |
-|
-- Query for week, month, year          |    L     |      3hr       |      -hr       |     -hr     |
+| Make own icon         |    L     |      4hr       |      -hr       |     -hr     |g
+| Query for week, month, year          |    L     |      3hr       |      -hr       |     -hr     |
 |  Google, Facebook sign up/log in     |    L     |      1hr       |      -hr       |     -hr     |
- 
-| Materialize                          |    H     |      4hr       |      -hr       |     -hr     |
-| Bootstrap                            |    H     |      4hr       |      -hr       |     -hr     |
-| Make own icon                        |    L     |      4hr       |      -hr       |     -hr     |
-| Total                                |    H     |     17hrs      |      -hrs      |    -hrs     |
->>>>>>> parent of a2ba19c... P3
+| Total                 |    H     |     20hrs      |      -hrs      |    -hrs     |
 
 ## Additional Libraries
 
-Use this section to list all supporting libraries and thier role in the project.
+- Rails-related RubyGems
+- pg (a PostgreSQL Ruby gem)
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+ def create
+    if User.find_by(username: params[:username])
+      render json: {error: "Username has been taken"}
+    else
+      @user = User.create(user_params)
+      if @user.valid? &&
+        token = encode_token({user_id: @user.id})
+        render json: {user: @user, token: token}
+      else
+        render json: {error: "Invalid username or password"}
+      end
+    end
+ end
+```
+
+```
+ def expenses_by_user
+  #@budget = Budget.where({id: params[:budget_id], user: params[:user_id]})
+  @user = User.find(params[:user_id])
+  @user_expenses = @user.expenses
+  render :json => {
+    :response => "Here are all your expenses",
+    :data => @user_expenses
+  }
+  end
 ```
 
 ## Issues and Resolutions
 
-Use this section to list of all major issues encountered and their resolution.
-
-#### SAMPLE.....
 
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
 **RESOLUTION**: Missing comma after first object in sources {} object
 
-## Previous Project Worksheet
+**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
+**RESOLUTION**: Missing comma after first object in sources {} object
 
-- [Readme's](https://github.com/jkeohan/fewd-class-repo/tree/master/final-project-worksheet/project-worksheet-examples)
-- [Best of class readme](https://github.com/jkeohan/fewd-class-repo/blob/master/final-project-worksheet/project-worksheet-examples/portfolio-gracie.md)
+**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
+**RESOLUTION**: Missing comma after first object in sources {} object
