@@ -98,20 +98,17 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component             | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :------------: | :---------: |
-| Project Hover         |    L     |      3hr       |      -hr       |     -hr     |
-| Banner letters wiggle |    L     |      1hr       |      -hr       |     -hr     |
-| Interactive Banner    |    M     |      4hr       |      -hr       |     -hr     |
-| Materialize           |    H     |      4hr       |      -hr       |     -hr     |
-| Bootstrap             |    H     |      4hr       |      -hr       |     -hr     |
-| Make own icon         |    L     |      4hr       |      -hr       |     -hr     |g
-| Query for week, month, year          |    L     |      3hr       |      -hr       |     -hr     |
-|  Google, Facebook sign up/log in     |    L     |      1hr       |      -hr       |     -hr     |
-| Total                 |    H     |     20hrs      |      -hrs      |    -hrs     |
+| Show all budgets     |    M    |      3hr       |      -hr       |     -hr     |
+| Return all expenses of user by category |    H     |      2hr       |      2hr       |     2hr     |
+| Return all expenses of user by date    |    M   |      5hr       |      -hr       |     -hr     |
+| Return all expenses of user within date range      |    H     |      5hr       |      -hr       |     -hr     |
+|  Google, Facebook sign up/log in     |    L     |      1hr       |      10hr       |     -hr     |
+| Total                 |    H     |     25hrs      |      2hrs      |    2hrs     |
 
 ## Additional Libraries
 
-- Rails-related RubyGems
-- pg (a PostgreSQL Ruby gem)
+- Rails-related RubyGems (framework to create RESTful API)
+- pg (a PostgreSQL Ruby gem) (local database)
 
 ## Code Snippet
 
@@ -147,11 +144,11 @@ Time frames are also key in the development cycle. You have limited time to code
 ## Issues and Resolutions
 
 
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: Expenses not returning for user
+**RESOLUTION**: `User.find`, not `Expense.find`
 
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: All users able to see the same budget
+**RESOLUTION**: Updated `belongs_to`, `has_many through` across all models
 
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: Able to make multiple users with same username
+**RESOLUTION**: Added `User.find_by(username: params[:username])` condition in create user controller
