@@ -16,12 +16,12 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Day   | Deliverable                                                      | Status     |
 | ----- | ---------------------------------------------------------------- | ---------- |
-| Day 1 | Project Description                                              | Complete |
-| Day 1 | Wireframes / Priority Matrix / Timeline `backend` and `frontend` | Complete |
-| Day 2 | Working RestAPI                                                  | Complete |
-| Day 3 | Frontend: Core Application Structure (HTML, CSS, etc.)           | Complete |
-| Day 4 | MVP & Bug Fixes                                                  | Complete |
-| Day 5 | Final Touches and Present                                        | Complete |
+| Day 1 | Project Description                                              | Complete   |
+| Day 1 | Wireframes / Priority Matrix / Timeline `backend` and `frontend` | Complete   |
+| Day 2 | Working RestAPI                                                  | Complete   |
+| Day 3 | Frontend: Core Application Structure (HTML, CSS, etc.)           | Complete   |
+| Day 4 | MVP & Bug Fixes                                                  | Complete   |
+| Day 5 | Final Touches and Present                                        | Complete   |
 
 ## Project Description
 
@@ -81,10 +81,10 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :------------: | :---------: |
-| JWT Authentication/Authorization   |    H     |      1hr      |     2hr      |     1hr     |
-| User model                         |    H     |      0.5hr    |      1hr       |     hr     |
-| User controller                    |    M    |       2hr      |      3hr       |     -hr     |
-| Expense Controller                 |    H     |     2hr      |      3hr       |     -hr     |
+| JWT Authentication/Authorization   |    H     |      1hr       |     2hr        |     1hr     |
+| User model                         |    H     |      0.5hr     |      1hr       |     -hr     |
+| User controller                    |    M     |      2hr       |      3hr       |     -hr     |
+| Expense Controller                 |    H     |      2hr       |      3hr       |     -hr     |
 | Expense Model                      |    M     |      1hr       |      2hr       |     -hr     |
 | Budget Model                       |    M     |      2hrs      |      1hr       |     -hr     |
 | Budget Controller                  |    H     |      2hr       |      3hr       |     -hr     |
@@ -92,18 +92,18 @@ Time frames are also key in the development cycle. You have limited time to code
 | Local Migration                    |    L     |      1hr       |      1hr       |     3hr     |
 | Test on Postman                    |    L     |      5hr       |      1hr       |     -hr     |
 | Deploy, migrate test on Heroku     |    L     |      10hr      |      1hr       |     3hr     |
-| Total                              |    H     |    27.5 hrs     |      20hrs      |    -hrs     |
+| Total                              |    H     |    27.5 hrs    |      20hrs     |    7hrs     |
 
 #### PostMVP
 
-| Component             | Priority | Estimated Time | Time Invested | Actual Time |
-| --------------------- | :------: | :------------: | :------------: | :---------: |
-| Show all budgets     |    M    |      3hr       |      -hr       |     -hr     |
-| Return all expenses of user by category |    H     |      2hr       |      2hr       |     2hr     |
-| Return all expenses of user by date    |    M   |      5hr       |      -hr       |     -hr     |
-| Return all expenses of user within date range      |    H     |      5hr       |      -hr       |     -hr     |
-|  Google, Facebook sign up/log in     |    L     |      1hr       |      10hr       |     -hr     |
-| Total                 |    H     |     25hrs      |      2hrs      |    2hrs     |
+| Component                                        | Priority | Estimated Time | Time Invested  | Actual Time |
+| ------------------------------------------------ | :------: | :------------: | :------------: | :---------: |
+| Show all budgets                                 |    M     |      3hr       |      -hr       |     -hr     |
+| Return all expenses of user by category          |    H     |      2hr       |      2hr       |     2hr     |
+| Return all expenses of user by date              |    M     |      5hr       |      -hr       |     -hr     |
+| Return all expenses of user within date range    |    H     |      5hr       |      -hr       |     -hr     |
+|  Google, Facebook sign up/log in                 |    L     |      1hr       |      10hr      |     -hr     |
+| Total                                            |    H     |     16hrs      |      12hrs     |    2hrs     |
 
 ## Additional Libraries
 
