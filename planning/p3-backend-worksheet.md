@@ -145,10 +145,13 @@ Time frames are also key in the development cycle. You have limited time to code
 
 
 **ERROR**: Expenses not returning for user
+
 **RESOLUTION**: `User.find`, not `Expense.find`
 
 **ERROR**: All users able to see the same budget
+
 **RESOLUTION**: Updated `belongs_to`, `has_many through` across all models
 
 **ERROR**: Able to make multiple users with same username
+
 **RESOLUTION**: Added `User.find_by(username: params[:username])` condition in create user controller
