@@ -99,11 +99,11 @@ Time frames are also key in the development cycle. You have limited time to code
 | Component                                        | Priority | Estimated Time | Time Invested  | Actual Time |
 | ------------------------------------------------ | :------: | :------------: | :------------: | :---------: |
 | Show all budgets                                 |    M     |      3hr       |      -hr       |     -hr     |
-| Return all expenses of user by category          |    H     |      2hr       |      2hr       |     2hr     |
+| Return all expenses of user by category          |    H     |      2hr       |      2hrs      |     2hrs    |
 | Return all expenses of user by date              |    M     |      5hr       |      -hr       |     -hr     |
 | Return all expenses of user within date range    |    H     |      5hr       |      -hr       |     -hr     |
-|  Google, Facebook sign up/log in                 |    L     |      1hr       |      10hr      |     -hr     |
-| Total                                            |    H     |     16hrs      |      12hrs     |    2hrs     |
+|  Google, Facebook sign up/log in                 |    L     |      10hr      |      -hr      |     -hr     |
+| Total                                            |    H     |     25hrs      |      2hrs     |    2hrs     |
 
 ## Additional Libraries
 
