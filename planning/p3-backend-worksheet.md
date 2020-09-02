@@ -137,7 +137,7 @@ Time frames are also key in the development cycle. You have limited time to code
      render :json => {
        :response => "Here are all your expenses",
        :data => @user_expenses
-  }
+     }
   end
 ```
 
