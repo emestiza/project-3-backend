@@ -131,12 +131,12 @@ Time frames are also key in the development cycle. You have limited time to code
 
 ```
  def expenses_by_user
-  #@budget = Budget.where({id: params[:budget_id], user: params[:user_id]})
-  @user = User.find(params[:user_id])
-  @user_expenses = @user.expenses
-  render :json => {
-    :response => "Here are all your expenses",
-    :data => @user_expenses
+     #@budget = Budget.where({id: params[:budget_id], user: params[:user_id]})
+     @user = User.find(params[:user_id])
+     @user_expenses = @user.expenses
+     render :json => {
+       :response => "Here are all your expenses",
+       :data => @user_expenses
   }
   end
 ```
